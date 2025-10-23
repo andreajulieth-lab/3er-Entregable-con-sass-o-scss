@@ -1,0 +1,67 @@
+
+// Animaciones y cards
+// ===============================
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.card,
+.servicio-card,
+.valor,
+.paquete,
+.persona {
+  border-radius: $radius;
+  background: $color-blanco;
+  overflow: hidden;
+  transition: $transicion-larga;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.8s ease-out forwards;
+  @include sombra();
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    @include sombra(hover);
+
+    img { transform: scale(1.05); }
+  }
+
+  .card-body { padding: 1.5rem; }
+
+  h3,
+  .card-title {
+    color: $color-principal !important;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    color: $color-texto;
+    font-size: 1rem;
+  }
+}
+
+.card:nth-child(1),
+.servicio-card:nth-child(1),
+.valor:nth-child(1),
+.paquete:nth-child(1),
+.persona:nth-child(1) { animation-delay: 0.1s; }
+
+.card:nth-child(2),
+.servicio-card:nth-child(2),
+.valor:nth-child(2),
+.paquete:nth-child(2),
+.persona:nth-child(2) { animation-delay: 0.25s; }
+
+.card:nth-child(3),
+.servicio-card:nth-child(3),
+.valor:nth-child(3),
+.paquete:nth-child(3),
+.persona:nth-child(3) { animation-delay: 0.4s; }

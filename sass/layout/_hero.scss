@@ -1,0 +1,40 @@
+
+// Hero
+// ===============================
+.hero-pagina,
+.hero-paquetes {
+  @include hero-contenedor;
+
+  .hero-contenido {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    gap: 1.5rem;
+    justify-items: center;
+    max-width: 800px;
+    padding: 3rem 2rem;
+    border-radius: $radius;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    @include sombra();
+
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #f1f1f1;
+      max-width: 600px;
+    }
+  }
+}
+
+.hero-paquetes {
+  background-image: url('../assets/img/cabana5.jpg');
+
+  .hero-contenido {
+    background: rgba(0, 0, 0, 0.4);
+  }
+}

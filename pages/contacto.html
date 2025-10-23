@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cabañas y Glampings - Contacto</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Tipografía -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../assets/icons/logo-caba.svg" alt="Logo Cabañas y Glampings" />
+        </a>
+      </div>
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+              <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
+              <li class="nav-item"><a class="nav-link" href="./paquetes.html">Paquetes</a></li>
+              <li class="nav-item"><a class="nav-link active" href="#">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero-pagina" style="background-image: url('../assets/img/contacto.jpg');">
+      <div class="hero-contenido">
+        <h1>Contáctanos</h1>
+        <p>Queremos ayudarte a planificar tu estadía perfecta en la naturaleza.</p>
+      </div>
+    </section>
+
+    <!-- Formulario -->
+    <section class="pagina contacto text-center">
+      <div class="container">
+        <p class="mb-5">Déjanos tu mensaje y pronto te responderemos para organizar juntos tu experiencia.</p>
+
+        <form class="formulario mx-auto" style="max-width: 500px;">
+          <input type="text" class="form-control mb-3" placeholder="Tu nombre" required>
+          <input type="email" class="form-control mb-3" placeholder="Tu correo" required>
+          <textarea class="form-control mb-3" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-3">
+    <p>© Todos los derechos reservados</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

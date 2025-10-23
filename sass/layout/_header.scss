@@ -1,0 +1,62 @@
+
+// Header
+// ===============================
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: $color-blanco;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  z-index: 100;
+  transition: $transicion-base;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 50px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.navbar-nav .nav-link,
+.navbar-brand {
+  font-weight: 600 !important;
+  color: $color-texto !important;
+  text-transform: none;
+  position: relative;
+  transition: $transicion-base;
+
+  &:hover,
+  &.active {
+    color: $color-principal !important;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: $color-principal;
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after,
+  &.active::after {
+    width: 100%;
+  }
+}

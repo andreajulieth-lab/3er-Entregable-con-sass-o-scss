@@ -1,0 +1,52 @@
+
+// Mixins
+// ===============================
+@mixin sombra($tipo: base) {
+  box-shadow: if($tipo == base, $sombra-base, $sombra-hover);
+}
+
+@mixin btn-estilo {
+  display: inline-block;
+  background: $color-principal;
+  color: $color-blanco !important;
+  padding: 0.85rem 2rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  text-decoration: none;
+  transition: $transicion-base;
+  box-shadow: 0 4px 8px rgba(4, 63, 49, 0.992);
+
+  &:hover {
+    background: $color-secundario;
+    transform: translateY(-3px);
+    @include sombra(hover);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+@mixin hero-contenedor {
+  position: relative;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: $color-blanco;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  margin-top: 90px;
+  padding: 2rem clamp(2rem, 6vw, 6rem);
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+  }
+}

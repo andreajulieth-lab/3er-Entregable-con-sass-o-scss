@@ -1,0 +1,18 @@
+
+// Variables
+// ===============================
+$color-principal: #065350;
+$color-secundario: lighten($color-principal, 10%);
+$color-texto: #0b3c3d;
+$color-fondo: #f9f9f9;
+$color-blanco: #fff;
+$color-sombra: rgba(0, 0, 0, 0.1);
+
+$fuente-principal: 'Poppins', sans-serif;
+
+$radius: 16px;
+$sombra-base: 0 4px 12px $color-sombra;
+$sombra-hover: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+$transicion-base: all 0.3s ease;
+$transicion-larga: all 0.4s ease;
